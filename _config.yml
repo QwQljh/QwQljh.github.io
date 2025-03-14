@@ -1,0 +1,25 @@
+title: 学习笔记
+description: 记录学习历程和心得体会
+author: QwQljh
+url: https://qwqljh.github.io
+
+theme: minima
+
+paginate: 5
+paginate_path: "/blog/page:num/"
+
+markdown: kramdown
+highlighter: rouge
+
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-seo-tag
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      comments: true
