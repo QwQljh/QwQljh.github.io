@@ -1,0 +1,113 @@
+---
+layout: post
+title: "HTML格式的博客文章"
+date: 2024-01-20
+categories: html
+---
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        .article-container {
+            font-family: 'Microsoft YaHei', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        .article-title {
+            color: #2c3e50;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+        .article-section {
+            margin: 20px 0;
+        }
+        .code-block {
+            background-color: #f8f8f8;
+            border-left: 4px solid #4CAF50;
+            padding: 15px;
+            margin: 20px 0;
+            overflow-x: auto;
+        }
+        .highlight {
+            background-color: #ffffcc;
+            padding: 2px 5px;
+        }
+        .note-box {
+            background-color: #e1f5fe;
+            border-left: 4px solid #03a9f4;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <div class="article-container">
+        <h1 class="article-title">HTML格式的博客文章</h1>
+        
+        <div class="article-section">
+            <h2>为什么使用HTML格式？</h2>
+            <p>使用HTML格式可以让我们的博客文章拥有更丰富的样式和交互效果，比如：</p>
+            <ul>
+                <li>自定义CSS样式</li>
+                <li>添加JavaScript交互</li>
+                <li>更灵活的布局控制</li>
+                <li>嵌入复杂的表格和图表</li>
+            </ul>
+        </div>
+        
+        <div class="note-box">
+            <p><strong>注意：</strong>虽然HTML提供了更多的灵活性，但也需要更多的编码工作。对于简单的文章，Markdown可能更加高效。</p>
+        </div>
+        
+        <div class="article-section">
+            <h2>代码示例</h2>
+            <div class="code-block">
+                <pre><code>function greeting(name) {
+    return `你好，${name}！欢迎来到我的博客。`;
+}
+
+console.log(greeting('访客'));</code></pre>
+            </div>
+        </div>
+        
+        <div class="article-section">
+            <h2>表格示例</h2>
+            <table>
+                <tr>
+                    <th>格式</th>
+                    <th>优点</th>
+                    <th>缺点</th>
+                </tr>
+                <tr>
+                    <td>Markdown</td>
+                    <td>简洁、易学、快速</td>
+                    <td>样式和布局有限</td>
+                </tr>
+                <tr>
+                    <td>HTML</td>
+                    <td>灵活、功能强大</td>
+                    <td>编写复杂、维护成本高</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
